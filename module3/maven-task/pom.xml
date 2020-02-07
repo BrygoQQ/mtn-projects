@@ -18,6 +18,7 @@
     <distributionManagement>
         <snapshotRepository>
           <id>maven-snapshots</id>
+          <name>maven-snapshots</name>
           <url>http://nexus/repository/maven-snapshots/</url>
         </snapshotRepository>
      </distributionManagement>
