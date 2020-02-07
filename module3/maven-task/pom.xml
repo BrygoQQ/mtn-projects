@@ -14,6 +14,10 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+    
+    
+    
+    
     <repositories>
         <repository>
           <id>maven-public</id>
@@ -26,11 +30,6 @@
           <name>maven-snapshots</name>
           <url>http://nexus/repository/maven-snapshots/</url>
         </snapshotRepository>
-        <repository>
-          <id>maven-releases</id>
-          <name>maven-releases</name>
-          <url>http://nexus/repository/maven-releases/</url>
-        </repository>
      </distributionManagement>
     <dependencies>
         <dependency>
@@ -48,6 +47,16 @@
 
     <build>
         <plugins>
+            <plugin>
+               <groupId>org.sonatype.plugins</groupId>
+               <artifactId>nexus-staging-maven-plugin</artifactId>
+               <version>1.6.3</version>
+               <extensions>true</extensions>
+               <configuration>
+                    <serverId>localNexus</serverId>
+                    <nexusUrl>http://nexus</nexusUrl>
+               </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-eclipse-plugin</artifactId>
