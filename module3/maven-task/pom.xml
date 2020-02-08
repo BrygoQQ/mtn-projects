@@ -23,11 +23,6 @@
     </repositories>
 
     <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>maven-releases</name>
-            <url>http://nexus/repository/maven-releases/</url>
-        </repository>
         <snapshotRepository>
           <id>maven-snapshots</id>
           <name>maven-snapshots</name>
@@ -51,6 +46,17 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>localNexus</serverId>
+                    <nexusUrl>http://nexus/</nexusUrl>
+                </configuration>
+            </plugin>
+
            <plugin>
                <artifactId>maven-deploy-plugin</artifactId>
                <version>2.8.1</version>
