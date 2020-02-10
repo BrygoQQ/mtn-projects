@@ -15,19 +15,19 @@
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
-    <!-- <repositories>
+    <repositories>
         <repository>
             <id>maven-public</id>
             <url>http://nexus/repository/maven-public</url>
         </repository>
-    </repositories> -->
+    </repositories>
 
     <distributionManagement>
-        <!-- <repository>
+        <repository>
             <id>maven-releases</id>
             <name>maven-releases</name>
             <url>http://nexus/repository/maven-releases/</url>
-        </repository> -->
+        </repository>
         <snapshotRepository>
           <id>maven-snapshots</id>
           <name>maven-snapshots</name>
