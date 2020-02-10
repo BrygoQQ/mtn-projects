@@ -16,6 +16,11 @@
     </properties>
     
     <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://nexus/repository/maven-releases/</url>
+        </repository>
         <snapshotRepository>
           <id>maven-snapshots</id>
           <name>maven-snapshots</name>
