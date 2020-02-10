@@ -17,7 +17,7 @@
 
     <repositories>
         <repository>
-            <id>maven-public</id>
+            <id>maven-central</id>
             <url>http://nexus/repository/maven-central</url>
         </repository>
     </repositories>
